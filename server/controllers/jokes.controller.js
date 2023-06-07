@@ -10,6 +10,7 @@ module.exports.findAllJokes = (req, res) => {
         });
 }
 
+
 module.exports.findOneSingleJoke = (req, res) => {
     Joke.findOne({ _id: req.params.id })
         .then(oneSingleJoke => {
